@@ -1,0 +1,28 @@
+log_level: info
+cluster:
+  - localhost:10070
+  - localhost:10071
+sync:
+  timeout: 3
+  failure:
+    count: 3
+  recover:
+    count: 2
+port: 10071
+proxy_port: 5001
+ip: localhost
+backend_proxied_port: 10090
+backends:
+  - localhost:10080
+  - localhost:10081
+monitor:
+  url: /check
+  check_code: false
+  interval: 2
+  timeout: 3
+  failure:
+    count: 3
+  recover:
+    count: 2
+to_master: /tomaster
+to_slave: /toslave
