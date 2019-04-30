@@ -1,4 +1,4 @@
-module github.com/netease/janus/src
+module github.com/mmpei/janus/src
 
 require (
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2
